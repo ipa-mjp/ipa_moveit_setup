@@ -1,0 +1,29 @@
+<package format="2">
+  <name>ipa_moveit_bringup</name>
+  <version>0.6.4</version>
+  <description>
+     MoveIt launch files
+  </description>
+  <author email="bfb@ipa.de">bfb</author>
+  <maintainer email="bfb@ipa.de">bfb</maintainer>
+  <maintainer email="bfb-mp@ipa.de">mjp</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>ipa_hardware_config</exec_depend>
+  <exec_depend>ipa_moveit_config</exec_depend>
+  <exec_depend>industrial_collision_detection</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_plugins</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_ros_perception</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_setup_assistant</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>stomp_moveit</exec_depend>
+  <exec_depend>tf</exec_depend>
+
+</package>
