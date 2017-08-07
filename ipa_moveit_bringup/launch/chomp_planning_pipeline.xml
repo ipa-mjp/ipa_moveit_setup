@@ -1,0 +1,20 @@
+<launch>
+
+	<arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/>
+	<arg name="pkg_moveit_config" default="$(find ipa_moveit_config)"/>
+	<arg name="config_path" default="$(arg pkg_moveit_config)/robots/$(arg robot)/moveit/config"/>
+	
+
+   <!-- CHOMP Plugin for MoveIt! -->
+   <arg name="planning_plugin" value="chomp_interface/CHOMPPlanner" />
+
+   <arg name="start_state_max_bounds_error" value="0.1" />
+
+   <param name="planning_plugin" value="$(arg planning_plugin)" />
+   <param name="start_state_max_bounds_error" value="$(arg start_state_max_bounds_error)" />
+
+   <param name="collision_detector" value="Hybrid" />
+
+	<rosparam command="load" file="$(arg config_path)/chomp_planning.yaml"/>	
+
+</launch>
