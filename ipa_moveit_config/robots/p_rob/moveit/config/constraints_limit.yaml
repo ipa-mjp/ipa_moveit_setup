@@ -5,7 +5,7 @@
 
 joint_constraint_limits:
   arm_joint1:
-    ceneter_position: -0.76
+    ceneter_position: -1.96
     tolerance_above: 0.59
     tolerance_below: 0.31
 #  arm_joint2:
@@ -17,13 +17,13 @@ joint_constraint_limits:
 #    tolerance_above: 1.26
 #    tolerance_below: 1.5
   arm_joint4:
-    ceneter_position: -3.14
+    ceneter_position: -3.13
     tolerance_above: 0.7505
     tolerance_below: 0.7369
-  arm_joint5:
-    ceneter_position: -0.25
-    tolerance_above: 0.21
-    tolerance_below: 0.30
+#  arm_joint5:
+#    ceneter_position: -0.88
+#    tolerance_above: 0.21
+#    tolerance_below: 0.30
 #  arm_joint6:
 #    ceneter_position: 0.0
 #    tolerance_above: 3.14
