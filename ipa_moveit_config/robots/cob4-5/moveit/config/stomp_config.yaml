@@ -44,15 +44,15 @@ stomp/arm_left:
     num_iterations_after_valid: 0    
     num_rollouts: 10
     max_rollouts: 100
-    initialization_method: 1 #[1 : LINEAR_INTERPOLATION, 2 : CUBIC_POLYNOMIAL, 3 : MININUM_CONTROL_COST
+    initialization_method: 2 #[1 : LINEAR_INTERPOLATION, 2 : CUBIC_POLYNOMIAL, 3 : MININUM_CONTROL_COST
     control_cost_weight: 0.0
   task:
     noise_generator:
       - class: stomp_moveit/NormalDistributionSampling
-        stddev: [0.3, 1.0, 0.5, 0.4, 0.3, 0.3, 0.3]
+        stddev: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
     cost_functions:
       - class: stomp_moveit/ObstacleDistanceGradient
-        max_distance: 0.2
+        max_distance: 0.1  # collision distance
         cost_weight: 1.0
         longest_valid_joint_move: 0.05 
     noisy_filters:
