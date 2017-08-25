@@ -49,7 +49,7 @@ stomp/arm_left:
   task:
     noise_generator:
       - class: stomp_moveit/NormalDistributionSampling
-        stddev: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+        stddev: [0.3, 0.3, 1.0, 1.0, 1.0, 1.0, 1.0]
     cost_functions:
       - class: stomp_moveit/ObstacleDistanceGradient
         max_distance: 0.1
