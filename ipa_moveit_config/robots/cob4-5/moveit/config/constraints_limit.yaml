@@ -4,18 +4,18 @@
 ##################################
 
 joint_constraint_limits:
-  arm_left_1_joint: 
-    ceneter_position: 0.0 
-    tolerance_above: 0.47
-    tolerance_below:  1.70
-  arm_left_2_joint:
-    ceneter_position: 0
-    tolerance_above: 1.50
-    tolerance_below: 0.20
-  arm_left_3_joint:
-    ceneter_position: -1.00
-    tolerance_above: 1.30
-    tolerance_below: 0.65
+##  arm_left_1_joint: 
+#    ceneter_position: 0.0 
+#    tolerance_above: 0.47
+#    tolerance_below:  1.70
+##  arm_left_2_joint:
+#    ceneter_position: 0
+#    tolerance_above: 1.50
+#    tolerance_below: 0.20
+##  arm_left_3_joint:
+#   ceneter_position: -1.00
+#    tolerance_above: 1.30
+##    tolerance_below: 0.65
 #  arm_left_4_joint:
 #    ceneter_position: -3.14
 #    tolerance_above: 1.57
@@ -24,14 +24,14 @@ joint_constraint_limits:
 #    ceneter_position: -1.5
 #    tolerance_above: 1.03
 #    tolerance_below: 1.15
-  arm_left_6_joint:
-    ceneter_position: -1.15
-    tolerance_above: 1.0
-    tolerance_below: 1.0
+##  arm_left_6_joint:
+#   ceneter_position: -1.15
+#    tolerance_above: 1.0
+#    tolerance_below: 1.0
   arm_left_7_joint:
     ceneter_position: 0
     tolerance_above: 0.35
-    tolerance_below: 3.00
+    tolerance_below: 3.50
 #  arm_right_1_joint:
 #    ceneter_position: 0
 #    tolerance_above: 0
