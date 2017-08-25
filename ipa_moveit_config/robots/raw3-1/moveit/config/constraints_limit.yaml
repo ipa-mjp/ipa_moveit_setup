@@ -4,30 +4,30 @@
 ##################################
 
 joint_constraint_limits:
-  arm_joint1:
-    ceneter_position: -0.76
-    tolerance_above: 0.59
-    tolerance_below: 0.31
-#  arm_joint2:
-#    ceneter_position: 0.0
-#    tolerance_above: 0.88
-#    tolerance_below: 1.15
-#  arm_joint3:
-#    ceneter_position: 1.5
-#    tolerance_above: 1.26
-#    tolerance_below: 1.5
-  arm_joint4:
+  arm_elbow_joint: 
+    ceneter_position: -2.40 
+    tolerance_above: 1.0
+    tolerance_below:  1.0
+  arm_shoulder_lift_joint:
+    ceneter_position: -0.40
+    tolerance_above: 1.0
+    tolerance_below: 1.2
+  arm_shoulder_pan_joint:
+    ceneter_position: -0.675
+    tolerance_above: 0.05
+    tolerance_below: 0.05
+  arm_wrist_1_joint:
     ceneter_position: -3.14
-    tolerance_above: 0.7505
-    tolerance_below: 0.7369
-  arm_joint5:
-    ceneter_position: -0.25
-    tolerance_above: 0.21
-    tolerance_below: 0.30
-#  arm_joint6:
-#    ceneter_position: 0.0
-#    tolerance_above: 3.14
-#    tolerance_below: 3.14
+    tolerance_above: 0.05
+    tolerance_below: 0.04
+  arm_wrist_2_joint:
+    ceneter_position: -1.5
+    tolerance_above: 0.05
+    tolerance_below: 0.05
+  arm_wrist_3_joint:
+    ceneter_position: 0
+    tolerance_above: 0.5
+    tolerance_below: 0.5
   
 ##################################
 #position constraint --> check what required
@@ -63,29 +63,67 @@ joint_constraint_limits:
 #orientation constraint --> check what required
 ##################################
 
-#joint_constraint_limits:
-#  arm_elbow_joint:
-#    ceneter_position: -0.675
-#    tolerance_above: 0.785
-#    tolerance_below: 1.05
-#  arm_shoulder_lift_joint:
-#    ceneter_position: 0
-#    tolerance_above: 0
-#    tolerance_below: 0
-#  arm_shoulder_pan_joint:
-#    ceneter_position: 0
-#    tolerance_above: 0
-#    tolerance_below: 0
-#  arm_wrist_1_joint:
-#    ceneter_position: -3.14
-#    tolerance_above: 1.57
-#    tolerance_below: 3.14
-#  arm_wrist_2_joint:
-#    ceneter_position: -1.5
-#    tolerance_above: 0.7652
-#    tolerance_below: 1.15
-#  arm_wrist_3_joint:
-#    ceneter_position: 0
-#    tolerance_above: 0
-#    tolerance_below: 0
-
+orientation_constraint_limits:
+  arm_forearm_link:
+    ox: 0.0 
+    oy: 0.0
+    oz: 0.0
+    ow: 1.0
+    absolute_x_axis_tolerance: 10
+    absolute_y_axis_tolerance: 10
+    absolute_z_axis_tolerance: 10
+    weight: 1.0
+  arm_upper_arm_link:
+    ox: 0.0 
+    oy: 0.0
+    oz: 0.0
+    ow: 1.0
+    absolute_x_axis_tolerance: 10
+    absolute_y_axis_tolerance: 10
+    absolute_z_axis_tolerance: 10
+    weight: 1.0
+  arm_shoulder_link:
+    ox: 0.0 
+    oy: 0.0
+    oz: 0.0
+    ow: 1.0
+    absolute_x_axis_tolerance: 10
+    absolute_y_axis_tolerance: 10
+    absolute_z_axis_tolerance: 10
+    weight: 1.0
+  arm_wrist_1_link:
+    ox: 0.0 
+    oy: 0.0
+    oz: 0.0
+    ow: 1.0
+    absolute_x_axis_tolerance: 10
+    absolute_y_axis_tolerance: 10
+    absolute_z_axis_tolerance: 10
+    weight: 1.0
+  arm_wrist_2_link:
+    ox: 0.0 
+    oy: 0.0
+    oz: 0.0
+    ow: 1.0
+    absolute_x_axis_tolerance: 10
+    absolute_y_axis_tolerance: 10
+    absolute_z_axis_tolerance: 10
+    weight: 1.0
+  arm_wrist_3_link:
+    ox: 0.0 
+    oy: 0.0
+    oz: 0.0
+    ow: 1.0
+    absolute_x_axis_tolerance: 10
+    absolute_y_axis_tolerance: 10
+    absolute_z_axis_tolerance: 10
+    weight: 1.0
+  arm_ee_link:
+    ox: 0.0 
+    oy: 0.0
+    oz: 0.0
+    ow: 1.0
+    absolute_x_axis_tolerance: 10
+    absolute_y_axis_tolerance: 10
+    absolute_z_axis_tolerance: 10
+    weight: 1.0
